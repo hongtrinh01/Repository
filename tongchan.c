@@ -3,11 +3,12 @@
 int tongchan(int n)
 {
 	int s=0;
-	while(n>0)
+	for(int i=0;i<n;i++)
 	{
-		int t = n % 10;
-		if(t%2==0)
-			s+=t;
-		n=n/10;
+		if(i%2==0)
+		{	
+			s+=i;
+		}	
 	}
+	return s;
 }
